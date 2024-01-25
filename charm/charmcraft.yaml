@@ -1,0 +1,29 @@
+name: flask-rabbitmq
+
+type: charm
+
+bases:
+  - build-on:
+      - name: ubuntu
+        channel: "22.04"
+    run-on:
+      - name: ubuntu
+        channel: "22.04"
+
+summary: Testing rabbitmq
+
+description: Testing rabbitmq
+
+extensions:
+  - flask-framework
+
+config:
+  options:
+    vhost:
+      description: Rabbitmq vhost.
+      type: string
+      default: "/"
+
+requires:
+  amqp:
+    interface: rabbitmq

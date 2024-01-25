@@ -1,0 +1,11 @@
+name: flask-rabbitmq
+base: ubuntu:22.04
+version: '0.1'
+summary: Testing rabbitmq
+description: Testing rabbitmq
+license: GPL-3.0
+platforms:
+    amd64:
+
+extensions:
+    - flask-framework
